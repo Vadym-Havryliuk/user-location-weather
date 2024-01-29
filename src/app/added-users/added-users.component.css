@@ -1,0 +1,35 @@
+.new-user {
+    padding: 25px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 200px;
+}
+
+.card-info {
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid white;
+    width: 100px;
+    margin-top: 50px;
+}
+
+@media (max-width: 1040px) {
+    .new-user {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 840px) {
+    .new-user {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 670px) {
+    .new-user {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

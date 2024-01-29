@@ -1,0 +1,59 @@
+.nav {
+    display: inline-flex;
+    width: 800px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #bababa;
+    font-size: 24px;
+}
+
+.nav a {
+    flex-grow: 1;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(57, 57, 57);
+}
+
+.nav a.active {
+    background-color: rgb(57, 57, 57);
+    color: white;
+}
+
+.nav a.active:first-child {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.nav a.active:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+
+@media (max-width: 1260px) {
+    .nav {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .nav {
+        font-size: 16px;
+        width: 500px;
+    }
+
+    .nav a {
+        padding: 15px;
+
+    }
+}
+
+@media (max-width: 670px) {
+    .nav {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .nav a {
+        padding: 10px;
+    }
+}
