@@ -14,7 +14,7 @@
     cursor: pointer;
     text-decoration: none;
     color: rgb(57, 57, 57);
-}
+} 
 
 .nav a.active {
     background-color: rgb(57, 57, 57);

@@ -1,35 +1,84 @@
 .new-user {
-    padding: 25px;
     font-size: 24px;
-    cursor: pointer;
+    padding: 25px;
+    margin-left: 100px;
     border-radius: 10px;
-    margin-left: 200px;
 }
 
 .card-info {
     padding: 10px;
     background-color: grey;
     border: 1px solid white;
-    width: 100px;
     margin-top: 50px;
+    width: 350px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.image-weather, .user-image, .weather, .user-info {
+    border: 1px solid white;
+}
+
+.image-weather {
+    width: 100px;
+}
+
+.user-image {
+    height: 150px;
+}
+
+.weather {
+    height: 100px;
+}
+
+.weather-image {
+    height: 50px;
+    border: 1px solid white;
+}
+
+.temperature {
+    text-align: center
+}
+
+.user-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info div {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media (max-width: 1040px) {
     .new-user {
-        font-size: 16px;
         padding: 15px;
+        font-size: 16px;
     }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 870px) {
     .new-user {
-        margin-left: 0px;
+        margin-left: 0;
     }
 }
 
 @media (max-width: 670px) {
-    .new-user {
+    .nav {
+        width: 100%;
         font-size: 12px;
+    }
+
+    .nav a {
         padding: 10px;
+    }
+
+    .new-user {
+        padding: 10px;
+        font-size: 12px;
     }
 }
