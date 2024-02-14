@@ -1,9 +1,15 @@
-import { Inject } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Inject()
+@Injectable()
 
 export class UsersService {
-    users = [];
+    users: {
+        name: string,
+        sex: string,
+        location: string,
+        email: string,
+        temperature: string
+    }[] = [];  
 
     addUser() {
         this.users.push({
@@ -13,5 +19,9 @@ export class UsersService {
             email: 'email',
             temperature: 'temperature'
         });
+    }
+
+    removeUser(index: number) {
+        this.users.splice(index, 1);
     }
 }

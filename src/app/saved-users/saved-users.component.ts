@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./saved-users.component.css']
 })
 export class SavedUsersComponent {
+    users: {
+      name: string,
+      sex: string,
+      location: string,
+      email: string,
+      temperature: string
+    }[] = [];
 
+    remove(idx: number) {
+       
+    }
 }

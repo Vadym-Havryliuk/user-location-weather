@@ -1,0 +1,77 @@
+.users {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-info {
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid white;
+    margin-top: 50px;
+    width: 350px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-weather, .user-image, .weather, .user-info {
+    border: 1px solid white;
+}
+
+.image-weather {
+    width: 100px;
+}
+
+.user-image {
+    height: 150px;
+}
+
+.weather {
+    height: 100px;
+}
+
+.weather-image {
+    height: 50px;
+    border: 1px solid white;
+}
+
+.temperature {
+    text-align: center;
+}
+
+.user-info {
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info div {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.save-remove {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.save, .remove {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.save {
+    margin-right: 20px;
+    background-color: rgb(17, 147, 17);
+}
+
+.remove {
+    background-color: red;
+}

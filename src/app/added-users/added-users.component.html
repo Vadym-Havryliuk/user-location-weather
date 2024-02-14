@@ -1,17 +1,24 @@
-<button class="new-user">ADD USER</button>
-<div class="card-info">
-    <div class="image-weather">
-        <div class="user-image"></div>
-        <div class="weather">
-            <div class="weather-image"></div>
-            <div class="temperature">+10c</div>
+<button class="new-user" (click)="newUser()">ADD USER</button>
+<div class="users">
+   <div class="card-info"  *ngFor="let user of users; let idx = index">
+        <div class="image-weather">
+            <div class="user-image"></div>
+            <div class="weather">
+                <div class="weather-image"></div>
+                <div class="temperature">+10c</div>
+            </div>
         </div>
-    </div>
-    <div class="user-info">
-        <div>Ім'я Прізвище</div>
-        <div>Стать</div>
-        <div>Місцезнаходження</div>
-        <div>Електронна пошта</div>
-    </div>
-</div>    
+        <div class="user-info">
+            <div>Ім'я Прізвище</div>
+            <div>Стать</div>
+            <div>Місцезнаходження</div>
+            <div>Електронна пошта</div>
+        </div>
+        <div class="save-remove">
+            <button class="save">Зберегти</button>
+            <button class="remove" (click)="remove(idx)">Видалити</button>
+        </div>
+    </div>  
+</div>
+   
 
